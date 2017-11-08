@@ -13,5 +13,13 @@ namespace Gami_ICT
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string mail = TB_email.Text;
+            string pass = TB_password.Text;
+            int res = App_Start.Controlador.Instance.logIn(mail,pass);            
+            LB_prueba.Text = res.ToString();
+        }
     }
 }
