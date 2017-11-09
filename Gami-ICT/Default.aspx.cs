@@ -18,7 +18,7 @@ namespace Gami_ICT
         {
             string mail = TB_email.Text;
             string pass = TB_password.Text;
-            int res = App_Start.Controlador.Instance.logIn(mail,pass);            
+            int res = 0;
             LB_prueba.Text = res.ToString();
         }
     }

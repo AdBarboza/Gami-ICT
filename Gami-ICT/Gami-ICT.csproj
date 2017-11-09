@@ -364,7 +364,6 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\Controlador.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
@@ -375,6 +374,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Content Include="Controler.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -411,7 +411,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
   </ItemGroup>

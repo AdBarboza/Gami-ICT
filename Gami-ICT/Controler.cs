@@ -5,23 +5,23 @@ using System.Web;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace Gami_ICT.App_Start
+namespace Gami_ICT.App_Code
 {
-    public class Controlador
+    public class Controler
     {
-        private static Controlador instance;
+        private static Controler instance;
         private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
-        
 
-        private Controlador() { }
 
-        public static Controlador Instance
+        private Controler() { }
+
+        public static Controler Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new Controlador();
+                    instance = new Controler();
                 }
                 return instance;
             }
@@ -43,8 +43,5 @@ namespace Gami_ICT.App_Start
             }
             return result;
         }
-
-        
-        
     }
 }
