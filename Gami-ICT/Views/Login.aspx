@@ -7,13 +7,13 @@
             <asp:Label ID="Lbl_user" runat="server" Text="Usuario:"></asp:Label>
         </div>
         <div class="row">
-            <input id="TXT_User" type="text" />
+            &nbsp;<asp:TextBox ID="TXT_user" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_PASS" runat="server" Text="Contraseña"></asp:Label>
         </div>
         <div class="row">
-            <input id="TXT_Contraseña" type="text" />
+            &nbsp;<asp:TextBox ID="TXT_Contraseña" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Error" runat="server" Text="No se pudo iniciar sesión." Visible="False"></asp:Label>
