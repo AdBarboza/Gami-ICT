@@ -2,13 +2,51 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="text-align: center"><%: Title %></h2>
+    
     <div class="columns">
         <div class="col-md-2">
-
+            <div class ="row">
+                <asp:Button ID="BTN_Parques" runat="server" Text="Parques Nacionales/Museos" Width="260px" />
+            </div>
+            <div class ="row">
+                <asp:Button ID="BTN_Hoteles" runat="server" Text="Hoteles" Width="260px" />
+            </div>
+            <div class ="row">
+                <asp:Button ID="BTN_Restaurante" runat="server" Text="Restaurantes" Width="260px" />
+            </div>
         </div>
+        
         <div class="col-md-2">
-
+            <asp:GridView ID="Grid1" runat="server"></asp:GridView>
         </div>
     </div>
-    <h3 style="text-align: center"></h3>
+
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td>Destino</td>
+                <td>Desde</td>
+                <td>Hasta</td>
+                <td>Personas</td>
+                <td>Monto Total</td>
+                <td>Opciones</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
     </asp:Content>
