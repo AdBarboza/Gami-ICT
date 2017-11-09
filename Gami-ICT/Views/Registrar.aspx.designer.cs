@@ -13,13 +13,22 @@ namespace Gami_ICT.Views {
     public partial class Registrar {
         
         /// <summary>
-        /// Control Lbl_user.
+        /// Control Lbl_correo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_user;
+        protected global::System.Web.UI.WebControls.Label Lbl_correo;
+        
+        /// <summary>
+        /// Control TXT_Correo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXT_Correo;
         
         /// <summary>
         /// Control LBL_PASS.
@@ -29,6 +38,15 @@ namespace Gami_ICT.Views {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LBL_PASS;
+        
+        /// <summary>
+        /// Control TXT_Contraseña.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXT_Contraseña;
         
         /// <summary>
         /// Control LBL_Error.

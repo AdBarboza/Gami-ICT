@@ -22,6 +22,15 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.Label Lbl_user;
         
         /// <summary>
+        /// Control TexTXT_User.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TexTXT_User;
+        
+        /// <summary>
         /// Control LBL_PASS.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace Gami_ICT.Views {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LBL_PASS;
+        
+        /// <summary>
+        /// Control TXT_Contraseña.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXT_Contraseña;
         
         /// <summary>
         /// Control LBL_Error.

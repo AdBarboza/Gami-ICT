@@ -4,16 +4,16 @@
     <h2 style="text-align: center"><%: Title %></h2>
     <div class="row" style="text-align: center">
         <div class="row">
-            <asp:Label ID="Lbl_user" runat="server" Text="Usuario:"></asp:Label>
+            <asp:Label ID="Lbl_correo" runat="server" Text="Correo:"></asp:Label>
         </div>
         <div class="row">
-            <input id="TXT_User" type="text" />
+            <asp:TextBox ID="TXT_Correo" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_PASS" runat="server" Text="Contraseña"></asp:Label>
         </div>
         <div class="row">
-            <input id="TXT_Contraseña" type="text" />
+            <asp:TextBox ID="TXT_Contraseña" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Error" runat="server" Text="No se pudo iniciar sesión." Visible="False"></asp:Label>

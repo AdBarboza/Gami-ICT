@@ -16,6 +16,7 @@ namespace Gami_ICT.Views
 
         protected void BTN_Logear_Click(object sender, EventArgs e)
         {
+
             LBL_Error.Visible = true;
             
         }
