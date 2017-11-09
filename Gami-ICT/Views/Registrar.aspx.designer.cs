@@ -28,7 +28,7 @@ namespace Gami_ICT.Views {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_user;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Cedula;
         
         /// <summary>
         /// LBL_PASS control.
@@ -40,7 +40,7 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.Label LBL_PASS;
         
         /// <summary>
-        /// LBL_Error control.
+        /// Control LBL_Error.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
