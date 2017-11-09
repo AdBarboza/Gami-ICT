@@ -250,6 +250,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Paquete_Especifico.aspx" />
+    <Content Include="Views\Registrar.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -316,6 +319,27 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Paquete_Especifico.aspx.cs">
+      <DependentUpon>Paquete_Especifico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Paquete_Especifico.aspx.designer.cs">
+      <DependentUpon>Paquete_Especifico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
