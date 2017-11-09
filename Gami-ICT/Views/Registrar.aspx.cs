@@ -16,7 +16,7 @@ namespace Gami_ICT.Views
 
         protected void BTN_Registrarse_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

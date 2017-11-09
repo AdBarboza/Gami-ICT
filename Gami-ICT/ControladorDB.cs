@@ -32,7 +32,7 @@ namespace Gami_ICT
             using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
             {
                 sqlCon.Open();
-                MySqlCommand sqlCmd = new MySqlCommand("exitsTurista", sqlCon);
+                MySqlCommand sqlCmd = new MySqlCommand("Login", sqlCon);
                 MySqlParameter ouP = new MySqlParameter("resultado", MySqlDbType.Int16) { Direction = ParameterDirection.Output };
                 sqlCmd.CommandType = CommandType.StoredProcedure;
                 sqlCmd.Parameters.AddWithValue("email", email);
@@ -41,6 +41,29 @@ namespace Gami_ICT
                 result = sqlCmd.ExecuteNonQuery();
             }
             return result;
+        }
+
+        public DataTable logIn2(string email, string password)
+        {
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("Login", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("email", email);
+                    cmd.Parameters.AddWithValue("cont", password);
+                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            // fill DataTable logic
+                            sda.Fill(dt);
+                            return dt;
+                        }
+
+                    }
+                }
+            }
         }
 
         public DataTable select()

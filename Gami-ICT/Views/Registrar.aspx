@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="Registrarse" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registrar.aspx.cs" Inherits="Gami_ICT.Views.Registrar" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 style="text-align: center"><%: Title %></h2>
+    <h2 style="text-align: center"><%: Title %>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    </h2>
     <div class="row" style="text-align: center">
         <div class="row">
             <asp:Label ID="Lbl_user" runat="server" Text="Usuario:"></asp:Label>

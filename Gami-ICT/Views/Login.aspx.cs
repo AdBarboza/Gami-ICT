@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Gami_ICT.Views
 {
@@ -11,15 +12,23 @@ namespace Gami_ICT.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LBL_Error.Visible = false;
         }
 
         protected void BTN_Logear_Click(object sender, EventArgs e)
         {
-            LBL_Error.Visible = true;
+            
             string email = TXT_user.Text;
             string contraseña = TXT_Contraseña.Text;
-            int resultado = ControladorDB.Instance.logIn(email,contraseña);
+            DataTable t = ControladorDB.Instance.logIn2(email,contraseña);
+            if(t.Rows[0][0].ToString() == "1")
+            {
+                Response.Redirect("Paquete_Especifico.aspx");
+            }else
+            {
+                LBL_Error.Visible = true;
+            }
+
         }
     }
 }
