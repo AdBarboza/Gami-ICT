@@ -30,14 +30,19 @@ namespace Gami_ICT
             
             DataTable dt = ControladorDB.Instance.select();           
             GridView1.DataSource = dt;
-            GridView1.DataBind();
-               
+            GridView1.DataBind();           
         }
 
-        protected void gv_RowEditing(object sender, GridViewEditEventArgs e)
+        protected void RowEditing(object sender, GridViewEditEventArgs e)
         {
             Int32 iID = Convert.ToInt32((GridView1.DataKeys[e.NewEditIndex].Value));
             //EditMethod(iID);        // now you can send ID and retrieve data.
+        }
+
+        protected void RowDeliting(object sender, GridViewDeleteEventArgs e)
+        {
+            Int32 iID = Convert.ToInt32((GridView1.DataKeys[e.RowIndex].Value));
+            //DeleteMethod(iID);        // now you can send ID and retrieve data.
         }
     }
 }

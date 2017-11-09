@@ -42,7 +42,12 @@
                                        <ItemTemplate>
                                            <asp:Button id="btnEdit" runat="server" Text="Edit" CommandName="Edit" CssClass="btn" CausesValidation="false"/>
                                        </ItemTemplate>
-                                </asp:TemplateField>                                   
+                                </asp:TemplateField>  
+                                <asp:TemplateField >
+                                       <ItemTemplate>
+                                           <asp:Button id="btnDelete" runat="server" Text="Delete" CommandName="Delete" CssClass="btn" CausesValidation="false"/>
+                                       </ItemTemplate>
+                                </asp:TemplateField>                                                                    
                             </Columns>
                         </asp:GridView>
                     </td>
