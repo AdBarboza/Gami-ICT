@@ -5,23 +5,22 @@ using System.Web;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace Gami_ICT.App_Code
+namespace Gami_ICT
 {
-    public class Controler
+    public class ControladorDB
     {
-        private static Controler instance;
+        private static ControladorDB instance;
         private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
 
+        private ControladorDB() { }
 
-        private Controler() { }
-
-        public static Controler Instance
+        public static ControladorDB Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new Controler();
+                    instance = new ControladorDB();
                 }
                 return instance;
             }
@@ -42,6 +41,28 @@ namespace Gami_ICT.App_Code
                 result = sqlCmd.ExecuteNonQuery();
             }
             return result;
+        }
+
+        public DataTable select()
+        {
+            
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("SelectTurista", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            // fill DataTable logic
+                            sda.Fill(dt);
+                            return dt;
+                        }                        
+                                                
+                    }
+                }
+            }
         }
     }
 }

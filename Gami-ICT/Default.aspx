@@ -22,12 +22,29 @@
                     <td style="width: 269px">
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td style="width: 269px">
                         <asp:Label ID="LB_prueba" runat="server" Text="Label"></asp:Label>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td style="width: 269px">
+                        <asp:GridView ID="GridView1" runat="server">
+                            <Columns>
+                                <asp:TemplateField >
+                                       <ItemTemplate>
+                                           <asp:Button id="btnEdit" runat="server" Text="Edit" CommandName="Edit" CssClass="btn" CausesValidation="false"/>
+                                       </ItemTemplate>
+                                </asp:TemplateField>                                   
+                            </Columns>
+                        </asp:GridView>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
