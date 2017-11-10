@@ -87,5 +87,27 @@ namespace Gami_ICT
                 }
             }
         }
+
+        public DataTable selectnombres()
+        {
+
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("faltanonmbre", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            // fill DataTable logic
+                            sda.Fill(dt);
+                            return dt;
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }

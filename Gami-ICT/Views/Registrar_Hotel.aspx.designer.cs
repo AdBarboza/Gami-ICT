@@ -10,7 +10,7 @@
 namespace Gami_ICT.Views {
     
     
-    public partial class Registrar {
+    public partial class Registrar_Hotel {
         
         /// <summary>
         /// Control LBL_Nombre.
@@ -31,76 +31,58 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.TextBox TXT_Nombre;
         
         /// <summary>
-        /// Control Lbl_correo.
+        /// Control Lbl_Tipo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_correo;
+        protected global::System.Web.UI.WebControls.Label Lbl_Tipo;
         
         /// <summary>
-        /// Control TXT_Correo.
+        /// Control TXT_Tipo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Correo;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Tipo;
         
         /// <summary>
-        /// Control LBL_Apellido.
+        /// Control LBL_Cantidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Apellido;
+        protected global::System.Web.UI.WebControls.Label LBL_Cantidad;
         
         /// <summary>
-        /// Control TXT_Apellido.
+        /// Control TXT_Cantidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Apellido;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Cantidad;
         
         /// <summary>
-        /// Control LBL_Cedula.
+        /// Control LBL_Tarifa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Cedula;
+        protected global::System.Web.UI.WebControls.Label LBL_Tarifa;
         
         /// <summary>
-        /// Control TXT_Cedula.
+        /// Control TXT_Tarifa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Cedula;
-        
-        /// <summary>
-        /// Control LBL_PASS.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_PASS;
-        
-        /// <summary>
-        /// Control TXT_Contraseña.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Contraseña;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Tarifa;
         
         /// <summary>
         /// Control LBL_Error.

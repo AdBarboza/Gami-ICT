@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -205,6 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\About.aspx" />
+    <Content Include="Views\Administracion.aspx" />
     <Content Include="Views\Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -251,9 +253,14 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Nombre_Parque.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\Paquete_Especifico.aspx" />
     <Content Include="Views\Registrar.aspx" />
+    <Content Include="Views\Registrar_Hotel.aspx" />
+    <Content Include="Views\Registrar_Parque.aspx" />
+    <Content Include="Views\Registrar_Restaurante.aspx" />
+    <Content Include="Views\VerReservas.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -280,6 +287,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Views\Administracion.aspx.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Administracion.aspx.designer.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,6 +336,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Nombre_Parque.aspx.cs">
+      <DependentUpon>Nombre_Parque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Nombre_Parque.aspx.designer.cs">
+      <DependentUpon>Nombre_Parque.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -342,6 +363,34 @@
     </Compile>
     <Compile Include="Views\Registrar.aspx.designer.cs">
       <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registrar_Hotel.aspx.cs">
+      <DependentUpon>Registrar_Hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registrar_Hotel.aspx.designer.cs">
+      <DependentUpon>Registrar_Hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registrar_Parque.aspx.cs">
+      <DependentUpon>Registrar_Parque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registrar_Parque.aspx.designer.cs">
+      <DependentUpon>Registrar_Parque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registrar_Restaurante.aspx.cs">
+      <DependentUpon>Registrar_Restaurante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registrar_Restaurante.aspx.designer.cs">
+      <DependentUpon>Registrar_Restaurante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VerReservas.aspx.cs">
+      <DependentUpon>VerReservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\VerReservas.aspx.designer.cs">
+      <DependentUpon>VerReservas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
