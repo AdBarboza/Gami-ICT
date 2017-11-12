@@ -31,6 +31,15 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.TextBox TXT_Nombre;
         
         /// <summary>
+        /// TXT_cod control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXT_cod;
+        
+        /// <summary>
         /// Lbl_Tipo control.
         /// </summary>
         /// <remarks>

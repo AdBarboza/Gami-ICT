@@ -8,6 +8,9 @@
         </div>
         <div class="row">
             <asp:TextBox ID="TXT_Nombre" runat="server"></asp:TextBox>
+            <br />
+            Codigo:<br />
+            <asp:TextBox ID="TXT_cod" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="Lbl_Tipo" runat="server" Text="Tipo de Habitacion:"></asp:Label>
