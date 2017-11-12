@@ -16,22 +16,22 @@ namespace Gami_ICT.Views
 
         protected void BTN_Restaurante_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Reistrar_Restaurante.aspx");
+            Response.Redirect("Registrar_Restaurante.aspx");
         }
 
         protected void BTN_Parque_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Registrar_Parque.aspx");
         }
 
         protected void BTN_Hotel_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Registrar_Hotel.aspx");
         }
 
         protected void BTN_Reserva_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("VerReservas.aspx");
         }
     }
 }
