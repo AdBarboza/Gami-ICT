@@ -10,7 +10,7 @@ namespace Gami_ICT
     public class ControladorDB
     {
         private static ControladorDB instance;
-        private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=root1234;";
+        private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
 
         private ControladorDB() { }
 
@@ -41,6 +41,58 @@ namespace Gami_ICT
                 result = sqlCmd.ExecuteNonQuery();
             }
             return result;
+        }
+
+        public DataTable register(string nomb,string email,string apellido,string ced, string password)
+        {
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("Registro", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("nomb",nomb );
+                    cmd.Parameters.AddWithValue("email", email);
+                    cmd.Parameters.AddWithValue("apellido", apellido);
+                    cmd.Parameters.AddWithValue("ced", ced);
+                    cmd.Parameters.AddWithValue("pass", password);
+                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            // fill DataTable logic
+                            sda.Fill(dt);
+                            return dt;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        public DataTable registerHotel(string codigo,string nomb, string descp, int capacidad, int tarifa)
+        {
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("RegistroHotel", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("codigo", codigo);
+                    cmd.Parameters.AddWithValue("nomb", nomb);
+                    cmd.Parameters.AddWithValue("descp", descp);
+                    cmd.Parameters.AddWithValue("capacidad",capacidad);
+                    cmd.Parameters.AddWithValue("tarifa", tarifa);
+                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            // fill DataTable logic
+                            sda.Fill(dt);
+                            return dt;
+                        }
+
+                    }
+                }
+            }
         }
 
         public DataTable logIn2(string email, string password)

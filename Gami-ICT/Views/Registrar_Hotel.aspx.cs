@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Gami_ICT.Views
 {
@@ -18,13 +19,29 @@ namespace Gami_ICT.Views
         {
             
             if (TXT_Nombre.Text!="" && TXT_Cantidad.Text!="" && TXT_Tarifa.Text!="" && TXT_cod.Text!="")
-            {
-                LBL_Error.Visible = true;
+            {                
+                DataTable t = ControladorDB.Instance.registerHotel(TXT_cod.Text, TXT_Nombre.Text, DD_tipoHabitacion.SelectedItem.ToString(), Int32.Parse(TXT_Cantidad.Text), Int32.Parse(TXT_Tarifa.Text));
+                if (t.Rows[0][0].ToString() == "1")
+                {
+                    limpiar();
+                }
+                else
+                {
+                    LBL_Error.Visible = true;
+                }
             }
             else
             {
                 LBL_Error.Visible = true;
             }
+        }
+
+        public void limpiar()
+        {
+            TXT_Cantidad.Text = "";
+            TXT_Nombre.Text = "";
+            TXT_cod.Text = "";
+            TXT_Tarifa.Text = "";
         }
     }
 }

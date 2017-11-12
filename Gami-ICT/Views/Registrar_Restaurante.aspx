@@ -8,6 +8,9 @@
         </div>
         <div class="row">
             <asp:TextBox ID="TXT_Nombre" runat="server"></asp:TextBox>
+            <br />
+            Codigo:<br />
+            <asp:TextBox ID="TXT_codigo" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="Lbl_Maximo" runat="server" Text="Maximo de Personas:"></asp:Label>

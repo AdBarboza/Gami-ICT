@@ -28,13 +28,13 @@
             <asp:Label ID="LBL_Cantidad" runat="server" Text="Cantidad:"></asp:Label>
         </div>
         <div class="row">
-            <asp:TextBox ID="TXT_Cantidad" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_Cantidad" runat="server" TextMode="Number"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Tarifa" runat="server" Text="Tarifa:"></asp:Label>
         </div>
         <div class="row">
-            <asp:TextBox ID="TXT_Tarifa" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_Tarifa" runat="server" TextMode="Number"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Error" runat="server" Text="No se pudo registrar correctamente." Visible="False"></asp:Label>
