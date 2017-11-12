@@ -14,8 +14,9 @@
         </div>
         <div class="row">
             <asp:TextBox ID="TXT_Tarifa" runat="server"></asp:TextBox>
+            <br />
         </div>
-        <div class="row">
+        <div class="row" style="margin-bottom: 9px">
             <asp:Label ID="LBL_Error" runat="server" Text="No se pudo registrar correctamente." Visible="False"></asp:Label>
         </div>
         <div class="row">

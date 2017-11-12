@@ -253,6 +253,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Metodo_Pago.aspx" />
     <Content Include="Views\Nombre_Parque.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\Paquete_Especifico.aspx" />
@@ -260,6 +261,8 @@
     <Content Include="Views\Registrar_Hotel.aspx" />
     <Content Include="Views\Registrar_Parque.aspx" />
     <Content Include="Views\Registrar_Restaurante.aspx" />
+    <Content Include="Views\Selecciona_Parque.aspx" />
+    <Content Include="Views\Sin_Implementar.aspx" />
     <Content Include="Views\VerReservas.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -336,6 +339,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Metodo_Pago.aspx.cs">
+      <DependentUpon>Metodo_Pago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Metodo_Pago.aspx.designer.cs">
+      <DependentUpon>Metodo_Pago.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Nombre_Parque.aspx.cs">
       <DependentUpon>Nombre_Parque.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -384,6 +394,20 @@
     </Compile>
     <Compile Include="Views\Registrar_Restaurante.aspx.designer.cs">
       <DependentUpon>Registrar_Restaurante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Selecciona_Parque.aspx.cs">
+      <DependentUpon>Selecciona_Parque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Selecciona_Parque.aspx.designer.cs">
+      <DependentUpon>Selecciona_Parque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Sin_Implementar.aspx.cs">
+      <DependentUpon>Sin_Implementar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Sin_Implementar.aspx.designer.cs">
+      <DependentUpon>Sin_Implementar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\VerReservas.aspx.cs">
       <DependentUpon>VerReservas.aspx</DependentUpon>

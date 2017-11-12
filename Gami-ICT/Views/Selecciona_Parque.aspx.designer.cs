@@ -10,60 +10,51 @@
 namespace Gami_ICT.Views {
     
     
-    public partial class Login {
+    public partial class Selecciona_Parque {
         
         /// <summary>
-        /// Control Lbl_user.
+        /// Control LBL_Fecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_user;
+        protected global::System.Web.UI.WebControls.Label LBL_Fecha;
         
         /// <summary>
-        /// Control TXT_user.
+        /// Control Calendar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_user;
+        protected global::System.Web.UI.WebControls.Calendar Calendar;
         
         /// <summary>
-        /// Control LBL_PASS.
+        /// Control LBL_Cantidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_PASS;
+        protected global::System.Web.UI.WebControls.Label LBL_Cantidad;
         
         /// <summary>
-        /// Control TXT_Contraseña.
+        /// Control TXT_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Contraseña;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Nombre;
         
         /// <summary>
-        /// Control LBL_Error.
+        /// Control BTN_Aceptar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Error;
-        
-        /// <summary>
-        /// Control BTN_Logear.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Logear;
+        protected global::System.Web.UI.WebControls.Button BTN_Aceptar;
     }
 }
