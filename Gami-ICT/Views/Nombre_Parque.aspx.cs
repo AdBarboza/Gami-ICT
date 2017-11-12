@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,12 +12,14 @@ namespace Gami_ICT.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void BTN_Cargas_Parques_Click(object sender, EventArgs e)
         {
-
+            DataTable dt = ControladorDB.Instance.selectnombres();
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
         }
     }
 }
