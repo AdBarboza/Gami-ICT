@@ -31,9 +31,9 @@ namespace Gami_ICT.Views
 
         }
 
+        String nombre_Hotel;
         DateTime fechaInicial_Hotel;
         DateTime fechaFinal_Hotel;
-        String nombre_Hotel;
         String tipo_Hotel;
         int cantidad_Hotel;
 
@@ -43,7 +43,9 @@ namespace Gami_ICT.Views
         protected void Button_Hotel_Click(object sender, EventArgs e)
         {
             nombre_Hotel = GridView_Hotel.SelectedValue.ToString();
-            LabelCantidad_Hotel.Text = nombre_Hotel;
+            fechaInicial_Hotel = Calendar_Hotel.SelectedDate;
+            fechaFinal_Hotel = Calendar2_Hotel.SelectedDate;
+            tipo_Hotel = 
         }
 
         protected void Button_Restaurante_Click(object sender, EventArgs e)
