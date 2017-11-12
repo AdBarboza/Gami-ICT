@@ -51,7 +51,7 @@
         <div>
             <asp:Label ID="LBL_Total" runat="server" Text="Total: "></asp:Label>
             <asp:Label ID="LBL_Total_Calculo" runat="server" Text="2000"></asp:Label>
-            <asp:Button ID="BTN_Reservar" runat="server" Text="Reservar" />
+            <asp:Button ID="BTN_Reservar" runat="server" Text="Reservar" OnClick="BTN_Reservar_Click" />
         </div>
     </div>
     </asp:Content>

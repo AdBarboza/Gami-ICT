@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace Gami_ICT.Views
 {
-    public partial class Parq_Musep_Especifico : System.Web.UI.Page
+    public partial class Pago_Exitoso : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void BTN_Reservar_Click(object sender, EventArgs e)
+        protected void BTN_Continuar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Metodo_Pago.aspx");
+            Response.Redirect("Nombre_Parque.aspx");
         }
     }
 }
