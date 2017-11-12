@@ -11,6 +11,10 @@ namespace Gami_ICT
     {
         private static ControladorDB instance;
         private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
+        private static int sesionActiva;
+        private static string paqueteSeleccionado;
+        private static string fechaParque;
+        private static string cantidadParque;
 
         private ControladorDB() { }
 
@@ -23,6 +27,58 @@ namespace Gami_ICT
                     instance = new ControladorDB();
                 }
                 return instance;
+            }
+        }
+
+        public int SesionActiva
+        {
+            get
+            {
+                return sesionActiva;
+            }
+
+            set
+            {
+                sesionActiva = value;
+            }
+        }
+
+        public string PaqueteSeleccionado
+        {
+            get
+            {
+                return paqueteSeleccionado;
+            }
+
+            set
+            {
+                paqueteSeleccionado = value;
+            }
+        }
+
+        public string CantidadParque
+        {
+            get
+            {
+                return cantidadParque;
+            }
+
+            set
+            {
+                cantidadParque = value;
+            }
+        }
+
+        public string FechaParque
+        {
+            get
+            {
+                return fechaParque;
+            }
+
+            set
+            {
+                fechaParque = value;
             }
         }
 
@@ -95,6 +151,29 @@ namespace Gami_ICT
             }
         }
 
+        public DataTable registerRest(string codigo, string nomb, int capacidad)
+        {
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("RegistroRestaurante", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("codigo", codigo);
+                    cmd.Parameters.AddWithValue("nomb", nomb);                    
+                    cmd.Parameters.AddWithValue("capacidad", capacidad);                    
+                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            // fill DataTable logic
+                            sda.Fill(dt);
+                            return dt;
+                        }
+
+                    }
+                }
+            }
+        }
         public DataTable logIn2(string email, string password)
         {
             using (MySqlConnection con = new MySqlConnection(connectionString))

@@ -12,13 +12,13 @@ namespace Gami_ICT.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //DataTable dt = ControladorDB.Instance.selectnombrehotel();
-            //GridView_Hotel.DataSource = dt;
-            //GridView_Hotel.DataBind();
+            DataTable dt = ControladorDB.Instance.selectnombrehotel();
+            GridView_Hotel.DataSource = dt;
+            GridView_Hotel.DataBind();
 
-            //dt = ControladorDB.Instance.selectnombrerestaurante();
-            //GridView_Restaurante.DataSource = dt;
-            //GridView_Restaurante.DataBind();
+            dt = ControladorDB.Instance.selectnombrerestaurante();
+            GridView_Restaurante.DataSource = dt;
+            GridView_Restaurante.DataBind();
         }
 
         protected void BTN_Parques_Click(object sender, EventArgs e)
@@ -90,6 +90,11 @@ namespace Gami_ICT.Views
             general_Restaurante = "";
 
             TextBox_Aceptar.Text = general_Hotel + "\n" + general_Restaurante;
+        }
+
+        protected void Calendar_Hotel_SelectionChanged(object sender, EventArgs e)
+        {
+
         }
 
         //El boton de Eliminar_XXX cambia el nombre de XXX a "" esto para validar que desea

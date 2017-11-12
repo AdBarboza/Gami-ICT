@@ -25,6 +25,7 @@ namespace Gami_ICT.Views
             {
                 if ((email == "admin1@ict.com" || email == "admin2@ict.com") && contraseña == "1234")
                 {
+                    ControladorDB.Instance.SesionActiva = 2;
                     Response.Redirect("Administracion.aspx");
                     Master.FindControl("NB_Iniciar").Visible = false;
                     Master.FindControl("NB_Registrar").Visible = false;
@@ -35,6 +36,7 @@ namespace Gami_ICT.Views
                 {
                     if (t.Rows[0][0].ToString() == "1")
                     {
+                        ControladorDB.Instance.SesionActiva = 1;
                         Response.Redirect("Paquete_Especifico.aspx");
                         Master.FindControl("NB_Iniciar").Visible = false;
                         Master.FindControl("NB_Registrar").Visible = false;
@@ -42,12 +44,14 @@ namespace Gami_ICT.Views
                     }
                     else
                     {
+                        ControladorDB.Instance.SesionActiva = 0;
                         LBL_Error.Visible = true;
                     }
                 }
             }
             else
             {
+                ControladorDB.Instance.SesionActiva = 0;
                 LBL_Error.Visible = true;
             }
         }

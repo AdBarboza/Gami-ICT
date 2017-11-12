@@ -22,40 +22,31 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.Label LBL_Nombre;
         
         /// <summary>
-        /// TXT_Nombre control.
+        /// TXT_Nombre1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Nombre;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Nombre1;
         
         /// <summary>
-        /// TXT_codigo control.
+        /// Lbl_Tarifa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_codigo;
+        protected global::System.Web.UI.WebControls.Label Lbl_Tarifa;
         
         /// <summary>
-        /// Lbl_Maximo control.
+        /// TXT_Tarifa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_Maximo;
-        
-        /// <summary>
-        /// TXT_Maximo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Maximo;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Tarifa;
         
         /// <summary>
         /// LBL_Error control.
@@ -67,12 +58,12 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.Label LBL_Error;
         
         /// <summary>
-        /// BTN_Registrar control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Registrar;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
