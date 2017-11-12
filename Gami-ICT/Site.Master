@@ -54,13 +54,14 @@
                         <li><a runat="server" href="~/Views/Sin_Implementar">Guias Didacticas</a></li>
                         <li><a runat="server" href="~/Views/Nombre_Parque">Parques Nacionales/Museos</a></li>
                         <li><a runat="server" href="~/Views/Sin_Implementar">App Movil</a></li>
+                        <li id="NB_Admi"><a runat="server" href="~/Views/Administracion" visible="False">Administracion</a></li>
                         <li><a runat="server" href="~/Views/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Views/Contact">Contacto</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                          <li><a runat="server" href="~/Views/Registrar" id="NB_Registrar">Registrarse</a></li>
                          <li><a runat="server" href="~/Views/Login" id="NB_Iniciar">Iniciar sesión</a></li>
-                         <li><a runat="server" href="~/Views/Login" id="NB_Cerrar" visible="False">Cerrar sesión</a></li>
+                         <li><a runat="server" href="~/Views/CerrarSesion" id="NB_Cerrar" visible="False">Cerrar sesión</a></li>
                     </ul>
                 </div>
             </div>

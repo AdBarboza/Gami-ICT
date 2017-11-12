@@ -26,12 +26,19 @@ namespace Gami_ICT.Views
                 if ((email == "admin1@ict.com" || email == "admin2@ict.com") && contraseña == "1234")
                 {
                     Response.Redirect("Administracion.aspx");
+                    Master.FindControl("NB_Iniciar").Visible = false;
+                    Master.FindControl("NB_Registrar").Visible = false;
+                    Master.FindControl("NB_Admi").Visible = true;
+                    Master.FindControl("NB_Cerrar").Visible = true;
                 }
                 else
                 {
                     if (t.Rows[0][0].ToString() == "1")
                     {
                         Response.Redirect("Paquete_Especifico.aspx");
+                        Master.FindControl("NB_Iniciar").Visible = false;
+                        Master.FindControl("NB_Registrar").Visible = false;
+                        Master.FindControl("NB_Cerrar").Visible = true;
                     }
                     else
                     {
