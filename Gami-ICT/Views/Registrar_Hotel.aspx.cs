@@ -16,7 +16,15 @@ namespace Gami_ICT.Views
 
         protected void BTN_Registrarse_Click(object sender, EventArgs e)
         {
+            
+            if (TXT_Nombre.Text=="" || TXT_Cantidad.Text=="" || TXT_Tarifa.Text=="")
+            {
 
+            }
+            else
+            {
+                LBL_Error.Visible = true;
+            }
         }
     }
 }

@@ -13,7 +13,13 @@
             <asp:Label ID="Lbl_Tipo" runat="server" Text="Tipo de Habitacion:"></asp:Label>
         </div>
         <div class="row">
-            <asp:TextBox ID="TXT_Tipo" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="DD_tipoHabitacion" runat="server">
+                <asp:ListItem>doble – 2 adultos y 2 menores</asp:ListItem>
+                <asp:ListItem>triple – 3 adultos y 1 menor</asp:ListItem>
+                <asp:ListItem Value="cuádruple – 4 adultos"></asp:ListItem>
+                <asp:ListItem>Junior Suite – doble + salón</asp:ListItem>
+                <asp:ListItem>Suite – 2 dobles + baños + salón + hall</asp:ListItem>
+            </asp:DropDownList>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Cantidad" runat="server" Text="Cantidad:"></asp:Label>

@@ -21,14 +21,28 @@ namespace Gami_ICT.Views
             string email = TXT_user.Text;
             string contraseña = TXT_Contraseña.Text;
             DataTable t = ControladorDB.Instance.logIn2(email,contraseña);
-            if(t.Rows[0][0].ToString() == "1")
+            if(email!="" && contraseña != "")
             {
-                Response.Redirect("Paquete_Especifico.aspx");
-            }else
+                if ((email == "admin1@ict.com" || email == "admin2@ict.com") && contraseña == "1234")
+                {
+                    Response.Redirect("Administracion.aspx");
+                }
+                else
+                {
+                    if (t.Rows[0][0].ToString() == "1")
+                    {
+                        Response.Redirect("Paquete_Especifico.aspx");
+                    }
+                    else
+                    {
+                        LBL_Error.Visible = true;
+                    }
+                }
+            }
+            else
             {
                 LBL_Error.Visible = true;
             }
-
         }
     }
 }

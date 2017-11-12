@@ -16,7 +16,7 @@ namespace Gami_ICT.Views
 
         protected void BTN_Restaurante_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Reistrar_Restaurante.aspx");
         }
 
         protected void BTN_Parque_Click(object sender, EventArgs e)
