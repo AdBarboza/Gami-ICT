@@ -7,7 +7,7 @@
             <asp:Label ID="LBL_Nombre" runat="server" Text="Nombre:"></asp:Label>
         </div>
         <div class="row">
-            <asp:TextBox ID="TXT_Nombre" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_Nombre1" runat="server"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="Lbl_Tarifa" runat="server" Text="Tarifa:"></asp:Label>
@@ -20,7 +20,7 @@
             <asp:Label ID="LBL_Error" runat="server" Text="No se pudo registrar correctamente." Visible="False"></asp:Label>
         </div>
         <div class="row">
-            <asp:Button ID="BTN_Registrar" runat="server" Text="Registrar" OnClick="BTN_Registrar_Click"/>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Registrar" />
         </div>
     </div>
     </asp:Content>

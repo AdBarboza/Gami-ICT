@@ -15,12 +15,14 @@ namespace Gami_ICT.Views
             DataTable dt = ControladorDB.Instance.selectnombres();
             GridView1.DataSource = dt;
             GridView1.DataBind();
-        }
+            
+        }        
 
-        protected void BTN_Cargas_Parques_Click(object sender, EventArgs e)
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //guardar nombre seleccionado 
-            Response.Redirect("Paquete_Especifico.aspx");
+            GridViewRow grdrow = GridView1.SelectedRow;
+            ControladorDB.Instance.PaqueteSeleccionado = grdrow.Cells[1].Text;
+            Response.Redirect("");
         }
     }
 }
