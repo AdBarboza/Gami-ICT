@@ -50,5 +50,10 @@ namespace Gami_ICT.Views
         {
 
         }
+
+        protected void BTN_Reservar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Metodo_Pago.aspx");
+        }
     }
 }
