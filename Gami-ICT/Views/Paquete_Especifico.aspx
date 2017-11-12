@@ -1,7 +1,25 @@
 ﻿<%@ Page Title="Paquete Turístico" Language="C#"  MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Paquete_Especifico.aspx.cs" Inherits="Gami_ICT.Views.Parq_Musep_Especifico" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 style="text-align: center"><%: Title %></h2>
+    <h2 style="text-align: center"><%: Title %>
+        <table style="width:100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </h2>
     <div class="row">
         <asp:Label ID="Label_Hotel" runat="server" Text="Hotel"></asp:Label>
     </div>
@@ -12,7 +30,7 @@
         <asp:Label ID="LabelFecha_Hotel" runat="server" Text="Seleccione Fecha Inicial"></asp:Label>
     </div>
     <div class="row">
-        <asp:Calendar ID="Calendar_Hotel" runat="server"></asp:Calendar>
+        <asp:Calendar ID="Calendar_Hotel" runat="server" OnSelectionChanged="Calendar_Hotel_SelectionChanged"></asp:Calendar>
     </div>
     <div class="row">
         <asp:Label ID="LabelFecha2_Hotel" runat="server" Text="Seleccione Fecha Final"></asp:Label>

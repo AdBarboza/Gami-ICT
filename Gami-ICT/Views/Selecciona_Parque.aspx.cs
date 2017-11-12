@@ -16,7 +16,12 @@ namespace Gami_ICT.Views
 
         protected void BTN_Aceptar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Paquete_Especifico.aspx");
+            if (TXT_cantidad.Text != "") {
+                ControladorDB.Instance.FechaParque = Calendar.SelectedDate.ToString();
+                ControladorDB.Instance.CantidadParque = TXT_cantidad.Text;
+                Response.Redirect("Paquete_Especifico.aspx");
+            }
+            
         }
     }
 }

@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <asp:Label ID="LBL_Cantidad" runat="server" Text="Cantidad:"></asp:Label>
-            <asp:TextBox ID="TXT_Nombre" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_cantidad" runat="server" TextMode="Number"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Button ID="BTN_Aceptar" runat="server" Text="Aceptar" OnClick="BTN_Aceptar_Click" />

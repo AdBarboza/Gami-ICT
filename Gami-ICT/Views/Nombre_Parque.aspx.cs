@@ -21,8 +21,8 @@ namespace Gami_ICT.Views
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow grdrow = GridView1.SelectedRow;
-            ControladorDB.Instance.PaqueteSeleccionado = grdrow.Cells[1].Text;
-            Response.Redirect("");
+            ControladorDB.Instance.PaqueteSeleccionado = grdrow.Cells[1].Text;            
+            Response.Redirect("Selecciona_Parque.aspx");
         }
     }
 }

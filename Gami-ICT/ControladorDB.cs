@@ -13,6 +13,8 @@ namespace Gami_ICT
         private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
         private static int sesionActiva;
         private static string paqueteSeleccionado;
+        private static string fechaParque;
+        private static string cantidadParque;
 
         private ControladorDB() { }
 
@@ -51,6 +53,32 @@ namespace Gami_ICT
             set
             {
                 paqueteSeleccionado = value;
+            }
+        }
+
+        public string CantidadParque
+        {
+            get
+            {
+                return cantidadParque;
+            }
+
+            set
+            {
+                cantidadParque = value;
+            }
+        }
+
+        public string FechaParque
+        {
+            get
+            {
+                return fechaParque;
+            }
+
+            set
+            {
+                fechaParque = value;
             }
         }
 
