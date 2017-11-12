@@ -256,6 +256,7 @@
     <Content Include="Views\Metodo_Pago.aspx" />
     <Content Include="Views\Nombre_Parque.aspx" />
     <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Pago_Exitoso.aspx" />
     <Content Include="Views\Paquete_Especifico.aspx" />
     <Content Include="Views\Registrar.aspx" />
     <Content Include="Views\Registrar_Hotel.aspx" />
@@ -359,6 +360,13 @@
     </Compile>
     <Compile Include="Views\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pago_Exitoso.aspx.cs">
+      <DependentUpon>Pago_Exitoso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pago_Exitoso.aspx.designer.cs">
+      <DependentUpon>Pago_Exitoso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Paquete_Especifico.aspx.cs">
       <DependentUpon>Paquete_Especifico.aspx</DependentUpon>

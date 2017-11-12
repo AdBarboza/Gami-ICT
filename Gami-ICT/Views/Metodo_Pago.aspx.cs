@@ -16,7 +16,7 @@ namespace Gami_ICT.Views
 
         protected void BTN_Aceptar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Pago_Exitoso.aspx");
         }
     }
 }
