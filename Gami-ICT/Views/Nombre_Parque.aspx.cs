@@ -12,15 +12,15 @@ namespace Gami_ICT.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = ControladorDB.Instance.selectnombres();
-            GridView1.DataSource = dt;
-            GridView1.DataBind();
+            //DataTable dt = ControladorDB.Instance.selectnombres();
+            //GridView1.DataSource = dt;
+            //GridView1.DataBind();
         }
 
         protected void BTN_Cargas_Parques_Click(object sender, EventArgs e)
         {
             //guardar nombre seleccionado 
-            Response.Redirect("Paquete_Especifico.aspx");
+            Response.Redirect("Selecciona_Parque.aspx");
         }
     }
 }

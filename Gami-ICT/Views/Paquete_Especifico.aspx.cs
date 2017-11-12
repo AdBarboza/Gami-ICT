@@ -12,13 +12,13 @@ namespace Gami_ICT.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = ControladorDB.Instance.selectnombrehotel();
-            GridView_Hotel.DataSource = dt;
-            GridView_Hotel.DataBind();
+            //DataTable dt = ControladorDB.Instance.selectnombrehotel();
+            //GridView_Hotel.DataSource = dt;
+            //GridView_Hotel.DataBind();
 
-            dt = ControladorDB.Instance.selectnombrerestaurante();
-            GridView_Restaurante.DataSource = dt;
-            GridView_Restaurante.DataBind();
+            //dt = ControladorDB.Instance.selectnombrerestaurante();
+            //GridView_Restaurante.DataSource = dt;
+            //GridView_Restaurante.DataBind();
         }
 
         protected void BTN_Parques_Click(object sender, EventArgs e)
