@@ -2,56 +2,58 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="text-align: center"><%: Title %></h2>
-    
-    <div class="columns">
-        <div class="col-md-2">
-            <div class ="row">
-                <asp:Button ID="BTN_Parques" runat="server" Text="Parques Nacionales/Museos" Width="260px" />
-            </div>
-            <div class ="row">
-                <asp:Button ID="BTN_Hoteles" runat="server" Text="Hoteles" Width="260px" />
-            </div>
-            <div class ="row">
-                <asp:Button ID="BTN_Restaurante" runat="server" Text="Restaurantes" Width="260px" />
-            </div>
-        </div>
-        
-        <div class="col-md-2">
-            <asp:GridView ID="Grid1" runat="server"></asp:GridView>
-        </div>
+    <div class="row">
+        <asp:Label ID="Label_Hotel" runat="server" Text="Hotel"></asp:Label>
     </div>
-
-    <div>
-        <table style="width: 100%;">
-            <tr>
-                <td>Destino</td>
-                <td>Desde</td>
-                <td>Hasta</td>
-                <td>Personas</td>
-                <td>Monto Total</td>
-                <td>Opciones</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <div>
-            <asp:Label ID="LBL_Total" runat="server" Text="Total: "></asp:Label>
-            <asp:Label ID="LBL_Total_Calculo" runat="server" Text="2000"></asp:Label>
-            <asp:Button ID="BTN_Reservar" runat="server" Text="Reservar" />
-        </div>
+    <div class="row">
+        <asp:GridView ID="GridView_Hotel" runat="server" OnSelectedIndexChanged="GridView_Hotel_SelectedIndexChanged"></asp:GridView>
+    </div>
+    <div class="row">
+        <asp:Label ID="LabelFecha_Hotel" runat="server" Text="Seleccione Fecha Inicial"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:Calendar ID="Calendar_Hotel" runat="server"></asp:Calendar>
+    </div>
+    <div class="row">
+        <asp:Label ID="LabelFecha2_Hotel" runat="server" Text="Seleccione Fecha Final"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:Calendar ID="Calendar2_Hotel" runat="server"></asp:Calendar>
+    </div>
+    <div class="row">
+        <asp:Label ID="LabelTipo_Hotel" runat="server" Text="Seleccione Tipo de Habitacion"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:ListBox ID="ListBox_Hotel" runat="server"></asp:ListBox>
+    </div>
+    <div class="row">
+        <asp:Label ID="LabelCantidad_Hotel" runat="server" Text="Digite la Cantidad de Personas"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:TextBox ID="TextBox_Hotel" runat="server" TextMode="Number"></asp:TextBox>
+    </div>
+    <div class="row">
+        <asp:Button ID="Button_Hotel" runat="server" Text="Agregar" OnClick="Button_Hotel_Click" />
+    </div>
+    <div class="row">
+        <asp:Label ID="Label_Restaurante" runat="server" Text="Restaurante"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:GridView ID="GridView_Restaurante" runat="server"></asp:GridView>
+    </div>
+    <div class="row">
+        <asp:Label ID="LabelFecha_Restaurante" runat="server" Text="Seleccione Fecha"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:Calendar ID="Calendar_Restaurante" runat="server"></asp:Calendar>
+    </div>
+    <div class="row">
+        <asp:Label ID="LabelCantidad_Restaurante" runat="server" Text="Digite la Cantidad de Personas"></asp:Label>
+    </div>
+    <div class="row">
+        <asp:TextBox ID="TextBox_Restaurante" runat="server" TextMode="Number"></asp:TextBox>
+    </div>
+    <div class="row">
+        <asp:Button ID="Button_Restaurante" runat="server" Text="Agregar" OnClick="Button_Restaurante_Click" />
     </div>
     </asp:Content>

@@ -13,66 +13,165 @@ namespace Gami_ICT.Views {
     public partial class Parq_Musep_Especifico {
         
         /// <summary>
-        /// Control BTN_Parques.
+        /// Control Label_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Parques;
+        protected global::System.Web.UI.WebControls.Label Label_Hotel;
         
         /// <summary>
-        /// Control BTN_Hoteles.
+        /// Control GridView_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Hoteles;
+        protected global::System.Web.UI.WebControls.GridView GridView_Hotel;
         
         /// <summary>
-        /// Control BTN_Restaurante.
+        /// Control LabelFecha_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Restaurante;
+        protected global::System.Web.UI.WebControls.Label LabelFecha_Hotel;
         
         /// <summary>
-        /// Control Grid1.
+        /// Control Calendar_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Grid1;
+        protected global::System.Web.UI.WebControls.Calendar Calendar_Hotel;
         
         /// <summary>
-        /// Control LBL_Total.
+        /// Control LabelFecha2_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Total;
+        protected global::System.Web.UI.WebControls.Label LabelFecha2_Hotel;
         
         /// <summary>
-        /// Control LBL_Total_Calculo.
+        /// Control Calendar2_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Total_Calculo;
+        protected global::System.Web.UI.WebControls.Calendar Calendar2_Hotel;
         
         /// <summary>
-        /// Control BTN_Reservar.
+        /// Control LabelTipo_Hotel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Reservar;
+        protected global::System.Web.UI.WebControls.Label LabelTipo_Hotel;
+        
+        /// <summary>
+        /// Control ListBox_Hotel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox_Hotel;
+        
+        /// <summary>
+        /// Control LabelCantidad_Hotel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelCantidad_Hotel;
+        
+        /// <summary>
+        /// Control TextBox_Hotel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Hotel;
+        
+        /// <summary>
+        /// Control Button_Hotel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Hotel;
+        
+        /// <summary>
+        /// Control Label_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Restaurante;
+        
+        /// <summary>
+        /// Control GridView_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView_Restaurante;
+        
+        /// <summary>
+        /// Control LabelFecha_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelFecha_Restaurante;
+        
+        /// <summary>
+        /// Control Calendar_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar_Restaurante;
+        
+        /// <summary>
+        /// Control LabelCantidad_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelCantidad_Restaurante;
+        
+        /// <summary>
+        /// Control TextBox_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Restaurante;
+        
+        /// <summary>
+        /// Control Button_Restaurante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Restaurante;
     }
 }
