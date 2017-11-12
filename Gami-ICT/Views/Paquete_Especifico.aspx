@@ -56,4 +56,16 @@
     <div class="row">
         <asp:Button ID="Button_Restaurante" runat="server" Text="Agregar" OnClick="Button_Restaurante_Click" />
     </div>
+    <div class="row">
+        <asp:TextBox ID="TextBox_Aceptar" runat="server"></asp:TextBox>
+    </div>
+    <div class="row">
+        <asp:Button ID="Button_EliminarHotel" runat="server" Text="Quitar Hotel" OnClick="Button_EliminarHotel_Click" />
+    </div>
+    <div class="row">
+        <asp:Button ID="Button_EliminarRestaurante" runat="server" Text="Quitar Restaurante" OnClick="Button_EliminarRestaurante_Click" />
+    </div>
+    <div class="row">
+        <asp:Button ID="Button_Aceptar" runat="server" Text="Aceptar" OnClick="Button_Aceptar_Click"/>
+    </div>
     </asp:Content>
