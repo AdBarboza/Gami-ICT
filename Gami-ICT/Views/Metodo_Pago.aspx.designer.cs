@@ -10,60 +10,87 @@
 namespace Gami_ICT.Views {
     
     
-    public partial class Login {
+    public partial class Metodo_Pago {
         
         /// <summary>
-        /// Control Lbl_user.
+        /// Control LBL_TT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_user;
+        protected global::System.Web.UI.WebControls.Label LBL_TT;
         
         /// <summary>
-        /// Control TXT_user.
+        /// Control TXT_TT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_user;
+        protected global::System.Web.UI.WebControls.TextBox TXT_TT;
         
         /// <summary>
-        /// Control LBL_PASS.
+        /// Control LBL_Numero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_PASS;
+        protected global::System.Web.UI.WebControls.Label LBL_Numero;
         
         /// <summary>
-        /// Control TXT_Contraseña.
+        /// Control TXT_Numero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TXT_Contraseña;
+        protected global::System.Web.UI.WebControls.TextBox TXT_Numero;
         
         /// <summary>
-        /// Control LBL_Error.
+        /// Control LBL_Fecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_Error;
+        protected global::System.Web.UI.WebControls.Label LBL_Fecha;
         
         /// <summary>
-        /// Control BTN_Logear.
+        /// Control Calendar_Venccimineto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_Logear;
+        protected global::System.Web.UI.WebControls.Calendar Calendar_Venccimineto;
+        
+        /// <summary>
+        /// Control LBL_Codigo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBL_Codigo;
+        
+        /// <summary>
+        /// Control TXT_Codigo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXT_Codigo;
+        
+        /// <summary>
+        /// Control BTN_Aceptar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BTN_Aceptar;
     }
 }
