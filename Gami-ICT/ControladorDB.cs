@@ -12,9 +12,19 @@ namespace Gami_ICT
         private static ControladorDB instance;
         private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
         private static int sesionActiva;
+        private static string sesionNombre;
         private static string paqueteSeleccionado;
         private static string fechaParque;
         private static string cantidadParque;
+        private static String nombre_Hotel;
+        private static DateTime fechaInicial_Hotel;
+        private static DateTime fechaFinal_Hotel;
+        private static String tipo_Hotel;
+        private static int cantidad_Hotel;
+        private static int precio_Hotel;
+        private static DateTime fecha_Restaurante;
+        private static String nombre_Restaurante;
+        private static int cantidad_Restaurante;        
 
         private ControladorDB() { }
 
@@ -79,6 +89,136 @@ namespace Gami_ICT
             set
             {
                 fechaParque = value;
+            }
+        }
+
+        public string Nombre_Hotel
+        {
+            get
+            {
+                return nombre_Hotel;
+            }
+
+            set
+            {
+                nombre_Hotel = value;
+            }
+        }
+
+        public DateTime FechaInicial_Hotel
+        {
+            get
+            {
+                return fechaInicial_Hotel;
+            }
+
+            set
+            {
+                fechaInicial_Hotel = value;
+            }
+        }
+
+        public DateTime FechaFinal_Hotel
+        {
+            get
+            {
+                return fechaFinal_Hotel;
+            }
+
+            set
+            {
+                fechaFinal_Hotel = value;
+            }
+        }
+
+        public string Tipo_Hotel
+        {
+            get
+            {
+                return tipo_Hotel;
+            }
+
+            set
+            {
+                tipo_Hotel = value;
+            }
+        }
+
+        public int Cantidad_Hotel
+        {
+            get
+            {
+                return cantidad_Hotel;
+            }
+
+            set
+            {
+                cantidad_Hotel = value;
+            }
+        }
+
+        public DateTime Fecha_Restaurante
+        {
+            get
+            {
+                return fecha_Restaurante;
+            }
+
+            set
+            {
+                fecha_Restaurante = value;
+            }
+        }
+
+        public string Nombre_Restaurante
+        {
+            get
+            {
+                return nombre_Restaurante;
+            }
+
+            set
+            {
+                nombre_Restaurante = value;
+            }
+        }
+
+        public int Cantidad_Restaurante
+        {
+            get
+            {
+                return cantidad_Restaurante;
+            }
+
+            set
+            {
+                cantidad_Restaurante = value;
+            }
+        }
+
+        public int Precio_Hotel
+        {
+            get
+            {
+                return precio_Hotel;
+            }
+
+            set
+            {
+                precio_Hotel = value;
+            }
+        }
+
+        public string SesionNombre
+        {
+            get
+            {
+                return sesionNombre;
+            }
+
+            set
+            {
+                sesionNombre = value;
             }
         }
 
@@ -281,6 +421,51 @@ namespace Gami_ICT
                         }
 
                     }
+                }
+            }
+        }
+
+        public void reservar
+            (string paqueteSeleccionado,
+            String nombre_Hotel,
+            String nombre_Restaurante,            
+            string sesionNombre,
+            int precio_Hotel,
+            DateTime fechaInicial_Hotel,
+            DateTime fechaFinal_Hotel,
+            string fechaParque,
+            DateTime fecha_Restaurante,
+            String tipo_Hotel,
+            string cantidadParque,                                   
+            int cantidad_Hotel,
+            int cantidad_Restaurante,
+            string tip_tarjeta,
+            string num_t,
+            DateTime fecha_tarjeta,
+            int cod_t)
+        {
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("Reservar", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("FK_parq_museo", paqueteSeleccionado);
+                    cmd.Parameters.AddWithValue("FK_hotel", nombre_Hotel);
+                    cmd.Parameters.AddWithValue("FK_rest", nombre_Restaurante);
+                    cmd.Parameters.AddWithValue("FK_turista", sesionNombre);
+                    cmd.Parameters.AddWithValue("Monto_total", precio_Hotel);
+                    cmd.Parameters.AddWithValue("Fecha_icio_h", fechaInicial_Hotel);
+                    cmd.Parameters.AddWithValue("Fecha_f_h", fechaFinal_Hotel);
+                    cmd.Parameters.AddWithValue("Fecha_parque", fechaParque);
+                    cmd.Parameters.AddWithValue("Fecha_rest", fecha_Restaurante);
+                    cmd.Parameters.AddWithValue("Tipo_Habitacion", tipo_Hotel);
+                    cmd.Parameters.AddWithValue("Cantidad_p T", cantidadParque);
+                    cmd.Parameters.AddWithValue("Cantidad_h T", cantidad_Hotel);
+                    cmd.Parameters.AddWithValue("Cantidad_r T", cantidad_Restaurante);
+                    cmd.Parameters.AddWithValue("TipoTarjeta", tip_tarjeta);
+                    cmd.Parameters.AddWithValue("numero", num_t);
+                    cmd.Parameters.AddWithValue("Fecha_vencimiento", fecha_tarjeta);
+                    cmd.Parameters.AddWithValue("Cod_seguridad", cod_t);             
                 }
             }
         }

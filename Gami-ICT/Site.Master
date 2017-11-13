@@ -54,7 +54,7 @@
                         <li><a runat="server" href="~/Views/Sin_Implementar">Guias Didacticas</a></li>
                         <li><a runat="server" href="~/Views/Nombre_Parque">Parques Nacionales/Museos</a></li>
                         <li><a runat="server" href="~/Views/Sin_Implementar">App Movil</a></li>
-                        <li id="NB_Admi"><a runat="server" href="~/Views/Administracion" visible="False">Administracion</a></li>
+                        <li><a runat="server" href="~/Views/Administracion" id="NB_Admi" visible="False">Administracion</a></li>
                         <li><a runat="server" href="~/Views/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Views/Contact">Contacto</a></li>
                     </ul>

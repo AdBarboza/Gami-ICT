@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <asp:Label ID="LBL_Numero" runat="server" Text="Numero:"></asp:Label>
-            <asp:TextBox ID="TXT_Numero" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_Numero" runat="server" TextMode="Number"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Fecha" runat="server" Text="Fecha Vencimiento:"></asp:Label>
@@ -17,7 +17,7 @@
         </div>
         <div class="row">
             <asp:Label ID="LBL_Codigo" runat="server" Text="Codigo Seguridad:"></asp:Label>
-            <asp:TextBox ID="TXT_Codigo" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_Codigo" runat="server" TextMode="Number"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Button ID="BTN_Aceptar" runat="server" Text="Aceptar" OnClick="BTN_Aceptar_Click" />

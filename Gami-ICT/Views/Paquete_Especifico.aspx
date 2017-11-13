@@ -2,29 +2,20 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="text-align: center"><%: Title %>
-        <table style="width:100%;">
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
     </h2>
     <div class="row">
         <asp:Label ID="Label_Hotel" runat="server" Text="Hotel"></asp:Label>
     </div>
     <div class="row">
-        <asp:GridView ID="GridView_Hotel" runat="server" OnSelectedIndexChanged="GridView_Hotel_SelectedIndexChanged"></asp:GridView>
+        <asp:GridView ID="GridView_Hotel" runat="server" OnSelectedIndexChanged="GridView_Hotel_SelectedIndexChanged">
+            <Columns>
+                <asp:TemplateField ShowHeader="False">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Select"></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
     </div>
     <div class="row">
         <asp:Label ID="LabelFecha_Hotel" runat="server" Text="Seleccione Fecha Inicial"></asp:Label>
@@ -42,7 +33,13 @@
         <asp:Label ID="LabelTipo_Hotel" runat="server" Text="Seleccione Tipo de Habitacion"></asp:Label>
     </div>
     <div class="row">
-        <asp:ListBox ID="ListBox_Hotel" runat="server"></asp:ListBox>
+            <asp:DropDownList ID="DD_tipoHabitacion" runat="server" >
+                <asp:ListItem>doble – 2 adultos y 2 menores</asp:ListItem>
+                <asp:ListItem>triple – 3 adultos y 1 menor</asp:ListItem>
+                <asp:ListItem Value="cuádruple – 4 adultos"></asp:ListItem>
+                <asp:ListItem>Junior Suite – doble + salón</asp:ListItem>
+                <asp:ListItem>Suite – 2 dobles + baños + salón + hall</asp:ListItem>
+            </asp:DropDownList>
     </div>
     <div class="row">
         <asp:Label ID="LabelCantidad_Hotel" runat="server" Text="Digite la Cantidad de Personas"></asp:Label>
@@ -57,7 +54,15 @@
         <asp:Label ID="Label_Restaurante" runat="server" Text="Restaurante"></asp:Label>
     </div>
     <div class="row">
-        <asp:GridView ID="GridView_Restaurante" runat="server"></asp:GridView>
+        <asp:GridView ID="GridView_Restaurante" runat="server" OnSelectedIndexChanged="GridView_Restaurante_SelectedIndexChanged1" Width="201px">
+            <Columns>
+                <asp:TemplateField ShowHeader="False">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Select"></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
     </div>
     <div class="row">
         <asp:Label ID="LabelFecha_Restaurante" runat="server" Text="Seleccione Fecha"></asp:Label>

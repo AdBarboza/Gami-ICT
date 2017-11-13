@@ -76,13 +76,13 @@ namespace Gami_ICT.Views {
         protected global::System.Web.UI.WebControls.Label LabelTipo_Hotel;
         
         /// <summary>
-        /// ListBox_Hotel control.
+        /// DD_tipoHabitacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox_Hotel;
+        protected global::System.Web.UI.WebControls.DropDownList DD_tipoHabitacion;
         
         /// <summary>
         /// LabelCantidad_Hotel control.
