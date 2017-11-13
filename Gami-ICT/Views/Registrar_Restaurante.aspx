@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Registrar Restaurante" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registrar_Parque.aspx.cs" Inherits="Gami_ICT.Views.Registrar_Parque" %>
+﻿<%@ Page Title="Registrar Restaurante" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registrar_Restaurante.aspx.cs" Inherits="Gami_ICT.Views.Registrar_Restaurante" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="text-align: center"><%: Title %></h2>
@@ -16,13 +16,13 @@
             <asp:Label ID="Lbl_Maximo" runat="server" Text="Maximo de Personas:"></asp:Label>
         </div>
         <div class="row">
-            <asp:TextBox ID="TXT_Maximo" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TXT_Maximo" runat="server" TextMode="Number"></asp:TextBox>
         </div>
         <div class="row">
             <asp:Label ID="LBL_Error" runat="server" Text="No se pudo registrar correctamente." Visible="False"></asp:Label>
         </div>
         <div class="row">
-            <asp:Button ID="BTN_Registrar" runat="server" Text="Registrar" OnClick="BTN_Registrar_Click1" />
+            <asp:Button ID="But_reg" runat="server" Text="Registar" OnClick="But_reg_Click" />
         </div>
     </div>
     </asp:Content>

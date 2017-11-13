@@ -10,6 +10,10 @@ namespace Gami_ICT.Views
 {
     public partial class Parq_Musep_Especifico : System.Web.UI.Page
     {
+
+        String general_Hotel;
+        String general_Restaurante;  
+
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable dt = ControladorDB.Instance.selectnombrehotel();
@@ -28,43 +32,29 @@ namespace Gami_ICT.Views
 
         protected void GridView_Hotel_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        String general_Hotel;
-        String general_Restaurante;
-
-        String nombre_Hotel;
-        DateTime fechaInicial_Hotel;
-        DateTime fechaFinal_Hotel;
-        String tipo_Hotel;
-        int cantidad_Hotel;
-        int precio_Hotel;
-
-        DateTime fecha_Restaurante;
-        String nombre_Restaurante;
-        int cantidad_Restaurante;
+            GridViewRow grdrow = GridView_Hotel.SelectedRow;
+            ControladorDB.Instance.Nombre_Hotel = grdrow.Cells[1].Text;
+        }      
 
         protected void Button_Hotel_Click(object sender, EventArgs e)
         {
-            nombre_Hotel = GridView_Hotel.SelectedValue.ToString();
-            fechaInicial_Hotel = Calendar_Hotel.SelectedDate;
-            fechaFinal_Hotel = Calendar2_Hotel.SelectedDate;
-            tipo_Hotel = ListBox_Hotel.SelectedValue;
-            cantidad_Hotel = Convert.ToInt32(TextBox_Hotel.Text);
 
-            general_Hotel = nombre_Hotel + fechaInicial_Hotel + fechaFinal_Hotel + tipo_Hotel + cantidad_Hotel + precio_Hotel;
-
+            ControladorDB.Instance.FechaInicial_Hotel = Calendar_Hotel.SelectedDate;
+            ControladorDB.Instance.FechaFinal_Hotel = Calendar2_Hotel.SelectedDate;
+            ControladorDB.Instance.Tipo_Hotel = DD_tipoHabitacion.SelectedItem.Text;
+            ControladorDB.Instance.Cantidad_Hotel = Convert.ToInt32(TextBox_Hotel.Text);
+            general_Hotel = ControladorDB.Instance.Nombre_Hotel + ControladorDB.Instance.FechaInicial_Hotel 
+                + ControladorDB.Instance.FechaFinal_Hotel + ControladorDB.Instance.Tipo_Hotel + ControladorDB.Instance.Cantidad_Hotel + ControladorDB.Instance.Precio_Hotel;
             TextBox_Aceptar.Text = general_Hotel + "\n" + general_Restaurante;
         }
 
         protected void Button_Restaurante_Click(object sender, EventArgs e)
         {
-            nombre_Restaurante = GridView_Restaurante.SelectedValue.ToString();
-            fecha_Restaurante = Calendar_Restaurante.SelectedDate;
-            cantidad_Restaurante = Convert.ToInt32(TextBox_Restaurante.Text);
+            ControladorDB.Instance.Fecha_Restaurante = Calendar_Restaurante.SelectedDate;
+            ControladorDB.Instance.Cantidad_Restaurante = Convert.ToInt32(TextBox_Restaurante.Text);
 
-            general_Restaurante = nombre_Restaurante + fecha_Restaurante + cantidad_Restaurante;
+            general_Restaurante = ControladorDB.Instance.Nombre_Restaurante + ControladorDB.Instance.Fecha_Restaurante + 
+                        ControladorDB.Instance.Cantidad_Restaurante;
 
             TextBox_Aceptar.Text = general_Hotel + "\n" + general_Restaurante;
         }
@@ -78,7 +68,7 @@ namespace Gami_ICT.Views
 
         protected void Button_EliminarHotel_Click(object sender, EventArgs e)
         {
-            nombre_Hotel = "";
+            ControladorDB.Instance.Nombre_Hotel = "";
             general_Hotel = "";
 
             TextBox_Aceptar.Text = general_Hotel + "\n" + general_Restaurante;
@@ -86,11 +76,24 @@ namespace Gami_ICT.Views
 
         protected void Button_EliminarRestaurante_Click(object sender, EventArgs e)
         {
-            nombre_Restaurante = "";
+            ControladorDB.Instance.Nombre_Restaurante = "";
             general_Restaurante = "";
 
             TextBox_Aceptar.Text = general_Hotel + "\n" + general_Restaurante;
         }
+
+        protected void Calendar_Hotel_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridView_Restaurante_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            GridViewRow grdrow = GridView_Restaurante.SelectedRow;
+            ControladorDB.Instance.Nombre_Restaurante = grdrow.Cells[1].Text;
+        }
+
+       
 
         //El boton de Eliminar_XXX cambia el nombre de XXX a "" esto para validar que desea
         //agregar XXX al paquete o no, en caso de ser "" no se guarda, de lo contrario se

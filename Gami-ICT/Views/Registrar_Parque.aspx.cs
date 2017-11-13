@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Gami_ICT.Views
 {
@@ -14,10 +15,12 @@ namespace Gami_ICT.Views
 
         }
 
-        protected void BTN_Registrar_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            
-
+            if(TXT_Nombre1.Text != "" && TXT_Tarifa.Text != "")
+            {
+                LBL_Error.Visible = true;
+            }
         }
     }
 }
