@@ -16,11 +16,5 @@ namespace Gami_ICT.Views
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
-
-        protected void BTN_Cargas_Parques_Click(object sender, EventArgs e)
-        {
-            //guardar nombre seleccionado 
-            Response.Redirect("Paquete_Especifico.aspx");
-        }
     }
 }

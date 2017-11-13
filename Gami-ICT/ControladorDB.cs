@@ -10,7 +10,7 @@ namespace Gami_ICT
     public class ControladorDB
     {
         private static ControladorDB instance;
-        private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=fnfDB1996;";
+        private static string connectionString = @"Server=localhost;Database=gami;Uid=root;Pwd=root1234;";
 
         private ControladorDB() { }
 
